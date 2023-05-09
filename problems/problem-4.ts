@@ -4,25 +4,25 @@
 // Create a TypeScript class called "Student" that extends the Person class and has an additional private property grade. Define a public method getGrade that returns the student's grade. Use the super keyword to call the constructor of the Person class and initialize the name and age properties.
 
 // solving 4
-// class Person {
-//   constructor(private name: string, private age: number) {}
+class Person {
+  constructor(private name: string, private age: number) {}
 
-//   getDetails(): string {
-//     return `Hello, I am ${this.name}. My age is ${this.age}`;
-//   }
-// }
+  getDetails(): string {
+    return `Hello, I am ${this.name}. My age is ${this.age}`;
+  }
+}
 
-// class Student extends Person {
-//   constructor(private grade: number, name: string, age: number) {
-//     super(name, age);
-//   }
-//   getGrade(): number {
-//     return this.grade;
-//   }
-// }
+class Student extends Person {
+  constructor(private grade: number, name: string, age: number) {
+    super(name, age);
+  }
+  getGrade(): number {
+    return this.grade;
+  }
+}
 
-// const testPerson = new Person("Mr. Vip Person", 32);
-// console.log(testPerson);
+const testPerson = new Person("Mr. Vip Person", 32);
+console.log(testPerson);
 
-// const testStudent = new Student(4, "Mr. Tip Person", 25);
-// console.log(testStudent.getGrade());
+const testStudent = new Student(4, "Mr. Tip Person", 25);
+console.log(testStudent.getGrade());
