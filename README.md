@@ -26,6 +26,34 @@ answer:
 
 ### question 5: Can you give an example of how to use enums in TypeScript?
 
-### What is the "as" keyword used for in TypeScript?
+answer:
 
-### Can you explain how to use "type guards" with "in" and "typeof" operators in TypeScript?
+-// hare is an example.
+
+// enum MyLocation {
+// country = "Bangladesh",
+// primeMinister = "Sheikh-Hasina",
+// city = "Dhaka",
+// bigRivar = "Padma",
+// }
+
+// const myCountry: typeof MyLocation = {
+// country: MyLocation.country,
+// primeMinister: MyLocation.primeMinister,
+// city: MyLocation.city,
+// bigRivar: MyLocation.bigRivar,
+// };
+
+// if we declare enum in typescript it will always defined numaric value of properties ony by one 0 to N. we can defined their value custom. and if we want to set this enum of an object then we should use typeof infront of enum. and we can just use the value that was declared in enum.
+
+### question 6: What is the "as" keyword used for in TypeScript?
+
+answer:
+
+- when we know types of a value better then typescipt itself then we use as keyword. we can change current type to another types using as keyword.
+
+### question 7: Can you explain how to use "type guards" with "in" and "typeof" operators in TypeScript?
+
+answer:
+
+- type guards is very impotant in typescript to prevent typeerror. there are some kinds of type guard system in typescript. typeof, in, intenceof. "in" is used to check in object property exist or not. "typeof" is used to check the typeof the value. like typeof value === "string".
