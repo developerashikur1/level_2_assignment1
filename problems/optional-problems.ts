@@ -12,6 +12,8 @@ arrOfStrings.push("Shadhin");
 tupleOfNUm[0] = 16;
 tupleOfNUm[1] = "ashikur";
 
+console.log(arrOfStrings, tupleOfNUm);
+
 // Optional Problem 2:
 // Create a TypeScript program that uses a conditional type to create a new type that is either a string or a number, depending on whether a parameter of type string or number is passed to the function.
 
